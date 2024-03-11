@@ -30,7 +30,7 @@ def create_savings_account(balance, interest_rate, months):
     wmonths = int(months) 
 
      # ADD YOUR CODE HERE
-    percent_rate = winterest_rt / 10000  # shift decimal right by 4
+    percent_rate = winterest_rt / 100  # shift decimal right by 4
     monthly_irate = percent_rate / 12    # divide for monthly rate
     earned_interest = (wbalance * monthly_irate * wmonths)     
         

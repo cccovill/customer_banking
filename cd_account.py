@@ -17,14 +17,17 @@ def create_cd_account(balance, interest_rate, months):
     # Create an instance of the `Account` class and pass in the balance and interest parameters.
     #  Hint: You need to add the interest as a value, i.e, 0.
     # ADD YOUR CODE HERE
-    CDAccount = Account(updated_balance, earned_interest)
+    CDAccount = Account(balance, interest_rate)
     # Calculate interest earned
     # ADD YOUR CODE HERE
+    updated_balance = 0
+    earned_interest = 0
     wbalance = float(balance)  
     winterest_rt = float(interest_rate)
     wmonths = int(months) 
-    monthly_irate = winterest_rt / 12  # get the monthly interest rate
-    earned_interest = wbalance * monthly_irate * wmonths  
+    percent_rate = winterest_rt / 100 # shift decimal right by 4
+    monthly_irate = percent_rate / 12    # divide for monthly rate
+    earned_interest = (wbalance * monthly_irate * wmonths)  
 
     # Update the CD account balance by adding the interest earned
     # ADD YOUR CODE HERE
