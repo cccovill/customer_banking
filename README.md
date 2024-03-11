@@ -7,7 +7,8 @@ Following the calculation in both cases (savings and CD), the main function driv
 For me, the most effort spent was ensuring the data was entered correctly.  Everthing else was fairly straight forward.  I assumed simple interest was to be calculated.  Nothing was mentioned regarding a requirement for compounded interest. 
 With that said, I used the following links for some of my editing effort on the data.  Relying on correct user input, ran the risk of program failure or unexpected results...
 
-References:
+### References:
+
 [Edits to ensure a decimal was entered or not.](https://www.freecodecamp.org/news/python-find-how-to-search-for-a-substring-in-a-string/#not-found)
 
 
